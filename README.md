@@ -278,7 +278,7 @@ end
 You can, and are encouraged to, use this method in views:
 
 ``` erb
-<% policy_scope(@user.posts).each do |post| %>
+<% pundit_policy_scope(@user.posts).each do |post| %>
   <p><%= link_to post.title, post_path(post) %></p>
 <% end %>
 ```
